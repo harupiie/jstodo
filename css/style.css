@@ -1,0 +1,132 @@
+* {
+    /* 全要素に適用 */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #000;
+    background-color: white;
+    padding: 30px 5% 0;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+header p {
+    font-size: 90%;
+    margin-bottom: 40px;
+    padding: 0 0 5px 0;
+    border-bottom: solid 5px #00aced;
+}
+
+#wrapper {
+    max-width: 1024px;
+    margin: 30px auto;
+    min-height: 300px;
+}
+
+#tab {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+#tab .tab-list {
+    margin-right: 15px;
+}
+
+#todo-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#todo-table th {
+    text-align: center;
+}
+
+#todo-table th, #todo-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#input-form {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #eee;
+    margin-top: 50px;
+}
+
+#input-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#input-form .input-text {
+    width: 60%;
+}
+
+#input-form .input-date {
+    width: 25%;
+}
+
+#input-form .input-text, 
+#input-form .input-date {
+    padding: 5px;
+}
+
+#input-form .input-text input, 
+#input-form .input-date input {
+    width: 100%;
+    padding: 10px;
+    outline-color: #ccc;
+}
+
+#input-form .submit {
+    padding: 10px;
+    position: relative;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.cell-edit-button {
+    width: 10%;
+    text-align: center;
+}
+
+.cell-text {
+    width: 30%;
+}
+
+.cell-created-at, 
+.cell-deadline-at {
+    width: 15%;
+    text-align: center;
+}
+
+.cell-delete, .cell-done {
+    width: 10%;
+    text-align: center;
+}
+
+select#sort-menu {
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    font-size: 13px;
+    outline-color: #ccc;
+}
+
+button {
+    padding: 15px 20px;
+    border: none;
+    background-color: #00aeed;
+    color: #fff;
+    border-radius: .5em;
+    line-height: 10px;
+    font-size: 13px;
+    transition: 0.1s all ease-in;
+    outline-color: #00a2d2;
+    }
